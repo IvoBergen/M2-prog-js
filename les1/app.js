@@ -6,7 +6,7 @@ class App
         console.log("Hello World");
         let appnaam = "3d stoelendans game";
         let versienummer = 0.2;
-        let versiedatum = 22;
+        let versiedatum = new Date("2022-11-22");
         let autheur = "ivo";
         let copyright = "hans games"
         let distibuteur = "epic game"
