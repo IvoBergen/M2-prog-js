@@ -6,6 +6,8 @@ class App
         console.log("hello world!");
         let canvas = document.getElementById("canvasId");
         let g = canvas.getContext("2d");
+        let randomgetal = Math.random();
+        console.log(randomgetal);
         g.beginPath()
         g.fillStyle = "Red";
         g.moveTo(300,100);
@@ -47,9 +49,13 @@ class App
         g.closePath();
         g.stroke();
         g.fill()
-
+        
+        if (randomgetal > 0.5)
+        {
+            
+         
         g.beginPath();
-        g.fillStyle = "cyan";
+        g.fillStyle = "#fffdb0";
         g.moveTo(225,465);
         g.lineTo(550,550);
         g.lineTo(550,450);
@@ -58,7 +64,24 @@ class App
         g.closePath();
         g.stroke();
         g.fill()
+        }
 
+        if (randomgetal < 0.5)
+        {
+            
+         
+        g.beginPath();
+        g.fillStyle = "#000000";
+        g.moveTo(225,465);
+        g.lineTo(550,550);
+        g.lineTo(550,450);
+        g.lineTo(225,370);
+        g.lineTo(225,450);
+        g.closePath();
+        g.stroke();
+        g.fill()
+        }
+        
         console.log(canvas);
     }
 }
