@@ -6,8 +6,8 @@ class App
         console.log("hello world!");
         let canvas = document.getElementById("canvasId");
         let g = canvas.getContext("2d");
-        let x = 400;
-        let y = 20;
+        let x = 500;
+        let y = 100;
         this.tekenkerstboom(g,x,y);
        
     }
@@ -113,6 +113,46 @@ class App
         g.closePath();
         g.stroke();
         g.fill()
+
+        g.fillStyle = "#FF00E6"
+        g.beginPath();
+        g.arc(x+10,y+300,20,0,Math.PI*2);
+        g.stroke();
+        g.fill();
+        g.closePath();
+
+        g.fillStyle = "#006DFF"
+        g.beginPath();
+        g.arc(x+30,y+100,20,0,Math.PI*2);
+        g.stroke();
+        g.fill();
+        g.closePath();
+
+        g.fillStyle = "#F31520"
+        g.beginPath();
+        g.arc(x+-50,y+190,20,0,Math.PI*2);
+        g.stroke();
+        g.fill();
+        g.closePath();
+
+        g.fillStyle = "#EEEA0B"
+        g.beginPath();
+        g.moveTo(x-130,y+260);
+        g.lineTo(x-155,y+310);
+        g.lineTo(x+105,y+210);
+        g.lineTo(x+80,y+160);
+        g.closePath();
+        g.stroke();
+        g.fill()
+
+        g.fillStyle = "#FFFC00"
+        g.beginPath();
+        g.arc(x+0,y+5,25,0,Math.PI*4);
+        g.stroke();
+        g.fill();
+        g.closePath();
+
+
     }   
     
 
