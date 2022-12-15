@@ -6,10 +6,28 @@ class App
         console.log("hello world!");
         let canvas = document.getElementById("canvasId");
         let g = canvas.getContext("2d");
-        let x = 500;
-        let y = 100;
-        this.tekenkerstboom(g,x,y);
        
+        this.tekenhuis(g,100,100);
+        this.tekenhuis(g,100,200);
+        this.tekenhuis(g,100,300);
+        this.tekenhuis(g,100,400);
+        this.tekenhuis(g,100,500);
+        this.tekenhuis(g,400,100);
+        this.tekenhuis(g,400,200);
+        this.tekenhuis(g,400,300);
+        this.tekenhuis(g,400,400);
+        this.tekenhuis(g,400,500);
+
+        this.tekenkerstboom(g,95,100);
+        this.tekenkerstboom(g,95,200);
+        this.tekenkerstboom(g,95,300);
+        this.tekenkerstboom(g,95,400);
+        this.tekenkerstboom(g,95,500);
+        this.tekenkerstboom(g,500,100);
+        this.tekenkerstboom(g,500,200);
+        this.tekenkerstboom(g,500,300);
+        this.tekenkerstboom(g,500,400);
+        this.tekenkerstboom(g,500,500);
     }
 
     tekenhuis(g,x,y)
@@ -20,42 +38,42 @@ class App
 
         g.beginPath();
         g.fillStyle = "Red";
-        g.moveTo(x+280,y+100);
-        g.lineTo(x+680,y+200);
-        g.lineTo(x+580,y+400);
-        g.lineTo(x+180,y+300);
+        g.moveTo(x+28,y+10);
+        g.lineTo(x+68,y+20);
+        g.lineTo(x+58,y+40);
+        g.lineTo(x+18,y+30);
         g.closePath();
         g.stroke();
         g.fill()
 
         g.beginPath()
         g.fillStyle = "gray";
-        g.moveTo(x+180,y+300);
-        g.lineTo(x+180,y+500);
-        g.lineTo(x+580,y+600);
-        g.lineTo(x+580,y+400);
-        g.lineTo(x+180,y+300);
+        g.moveTo(x+18,y+30);
+        g.lineTo(x+18,y+50);
+        g.lineTo(x+58,y+60);
+        g.lineTo(x+58,y+40);
+        g.lineTo(x+18,y+30);
         g.closePath();
         g.stroke();
         g.fill()
 
         g.beginPath()
         g.fillstyle = "gray"
-        g.moveTo(x+580,y+400);
-        g.lineTo(x+680,y+200);
-        g.lineTo(x+780,y+300);
-        g.lineTo(x+580,y+400);
-        g.lineTo(x+580,y+600);
+        g.moveTo(x+58,y+40);
+        g.lineTo(x+68,y+20);
+        g.lineTo(x+78,y+30);
+        g.lineTo(x+58,y+40);
+        g.lineTo(x+58,y+60);
         g.closePath();
         g.stroke();
         g.fill()
 
         g.beginPath();
         g.fillstyle = "gray";
-        g.moveTo(x+580,y+600);
-        g.lineTo(x+780,y+500);
-        g.lineTo(x+780,y+300);
-        g.lineTo(x+580,y+400);
+        g.moveTo(x+58,y+60);
+        g.lineTo(x+78,y+50);
+        g.lineTo(x+78,y+30);
+        g.lineTo(x+58,y+40);
         g.closePath();
         g.stroke();
         g.fill()
@@ -66,11 +84,10 @@ class App
      
             g.beginPath();
             g.fillStyle = "#fffdb0";
-            g.moveTo(x+205,465);
-            g.lineTo(x+530,550);
-            g.lineTo(x+530,450);
-            g.lineTo(x+205,370);
-            g.lineTo(x+205,450);
+            g.moveTo(x+53,y+55);
+            g.lineTo(x+53,y+45);
+            g.lineTo(x+21,y+37);
+            g.lineTo(x+21,y+45);
             g.closePath();
             g.stroke();
             g.fill()
@@ -82,11 +99,10 @@ class App
      
             g.beginPath();
             g.fillStyle = "#000000";
-            g.moveTo(x+205,465);
-            g.lineTo(x+530,550);
-            g.lineTo(x+530,450);
-            g.lineTo(x+205,370);
-            g.lineTo(x+205,450);
+            g.moveTo(x+53,y+55);
+            g.lineTo(x+53,y+45);
+            g.lineTo(x+21,y+37);
+            g.lineTo(x+21,y+45);
             g.closePath();
             g.stroke();
             g.fill()
@@ -98,56 +114,56 @@ class App
         g.fillStyle = "#32bc45"; 
         g.beginPath();
         g.moveTo(x,y);
-        g.lineTo(x-200,y+400);
-        g.lineTo(x+200,y+400);
+        g.lineTo(x-20,y+40);
+        g.lineTo(x+20,y+40);
         g.closePath();
         g.stroke();
         g.fill()
 
         g.fillStyle = "#7c5904"
         g.beginPath();
-        g.moveTo(x-50,y+400);
-        g.lineTo(x-50,y+500);
-        g.lineTo(x+50,y+500);
-        g.lineTo(x+50,y+400);
+        g.moveTo(x-5,y+40);
+        g.lineTo(x-5,y+50);
+        g.lineTo(x+5,y+50);
+        g.lineTo(x+5,y+40);
         g.closePath();
         g.stroke();
         g.fill()
 
         g.fillStyle = "#FF00E6"
         g.beginPath();
-        g.arc(x+10,y+300,20,0,Math.PI*2);
+        g.arc(x+-6,y+31,2,0,Math.PI*2);
         g.stroke();
         g.fill();
         g.closePath();
 
         g.fillStyle = "#006DFF"
         g.beginPath();
-        g.arc(x+30,y+100,20,0,Math.PI*2);
+        g.arc(x+10,y+30,2,0,Math.PI*2);
         g.stroke();
         g.fill();
         g.closePath();
 
         g.fillStyle = "#F31520"
         g.beginPath();
-        g.arc(x+-50,y+190,20,0,Math.PI*2);
+        g.arc(x+-5,y+15,2,0,Math.PI*2);
         g.stroke();
         g.fill();
         g.closePath();
 
         g.fillStyle = "#EEEA0B"
         g.beginPath();
-        g.moveTo(x-130,y+260);
-        g.lineTo(x-155,y+310);
-        g.lineTo(x+105,y+210);
-        g.lineTo(x+80,y+160);
+        g.moveTo(x-13,y+25);
+        g.lineTo(x-15,y+30);
+        g.lineTo(x+10,y+20);
+        g.lineTo(x+8,y+15);
         g.closePath();
         g.stroke();
         g.fill()
 
         g.fillStyle = "#FFFC00"
         g.beginPath();
-        g.arc(x+0,y+5,25,0,Math.PI*4);
+        g.arc(x+0,y+2,5,0,Math.PI*4);
         g.stroke();
         g.fill();
         g.closePath();
