@@ -221,6 +221,17 @@ class App
         g.arc(x+200,y+470,100,0,Math.PI*4);
         g.fill();
 
+        g.strokeStyle = "white";
+        g.setLineDash([11, 15]);
+        g.fillStyle = "#807A7A"
+        g.lineWidth = 6;
+        g.beginPath();
+        g.arc(x+200,y+470,75,0,Math.PI*4);
+        g.stroke();
+        g.strokeStyle = "black";
+        g.setLineDash([0,0]);
+        g.lineWidth = 1;
+
         g.fillStyle = "#2F682F"
         g.beginPath();
         g.arc(x+200,y+470,40,0,Math.PI*4);
@@ -285,7 +296,7 @@ class App
 
     tekentext(g,x,y)
     {
-        g.font = "50px Arial";
+        g.font = "50px Dream Outloud Pro";
         g.fillStyle = "#E61E1E"
         g.fillText("Merry Xmas 2023", x+0,y+10);
     }
